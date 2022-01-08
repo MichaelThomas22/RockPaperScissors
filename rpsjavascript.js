@@ -37,7 +37,8 @@ function playRound(playerSelection, computerSelection) {
     let winner = ""
     for (let i = 0; i <5; i++) {
         compPick = computerPlay();
-        let playerpick = playerSelection
+        
+        let playerpick = window.prompt('Choose Rock Paper or Scissors')
         let winner = playRound(compPick,playerpick);
         
         if (winner == "Player Wins") {
@@ -58,7 +59,6 @@ function playRound(playerSelection, computerSelection) {
     }
     // return(`The score was Player ${playerWins} Computer ${computerWins}`)
   }
-const playerSelection = "paper";
 
 console.log(game())
 
