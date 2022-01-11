@@ -11,7 +11,7 @@ function computerPlay() {
             return "paper"
         }
         else {
-            return "scissors"
+            return "scissors";
         }
 }
 
